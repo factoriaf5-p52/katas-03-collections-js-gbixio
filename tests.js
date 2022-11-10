@@ -18,7 +18,8 @@ describe("Colecciones en JS: Array", () => {
     it("Pueden estar vacíos o contener elementos", () => {
 
         // crea un array que esté vacío y otro que no esté vacío
-
+        let emptyArray = ("")
+        let nonEmptyArray = ("i'm not empty")
         expect(emptyArray).to.be.empty;
         expect(nonEmptyArray).not.to.be.empty;
     })
