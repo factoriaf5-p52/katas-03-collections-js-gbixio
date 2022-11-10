@@ -12,6 +12,7 @@ describe("Colecciones en JS: Array", () => {
 
         // crea un array "a" usando el constructor "new"
 
+        let a = new Array("nuevo array");
         expect(Array.isArray(a)).to.be.true;
     })
     it("Pueden estar vacíos o contener elementos", () => {
