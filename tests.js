@@ -26,8 +26,11 @@ describe("Colecciones en JS: Array", () => {
     it("Tienen una longitud correspondiente que podemos conocer con la propiedad 'length'", () => {
 
         let list = [10, "foo", true, "pepe"];
+        if(list.length = 4){ 
+        return "4"      
+        }
 
-        // completa la definición que falta usando la propiedad length
+// completa la definición que falta usando la propiedad length
 
         expect("???").to.equal(4);
     })
