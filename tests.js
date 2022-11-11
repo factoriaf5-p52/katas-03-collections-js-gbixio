@@ -37,18 +37,20 @@ describe("Colecciones en JS: Array", () => {
     it("Nos permiten acceder a cada elemento del array", () => {
 
         let fruits = ["Piña", "Manzana", "Fresa", "Melón"]
-
         // sustituye "???" en cada caso para acceder al elemento correspondiente de la lista
+      return(fruits.length)
 
-        expect("???").to.equal("Piña");
-        expect("???").to.equal("Melón");
+        expect(fruits).to.equal("Piña");
+        expect(fruits).to.equal("Melón");
     })
     it("Nos permiten modificar cada elemento", () => {
 
         let fruits = ["Piña", "Manzana", "Fresa", "Melón"]
 
         // Añade el código que permite modificar el elemento correspondiente
-
+        const indice = 1;
+        fruits[indice] = "Pera"
+        
         expect(fruits).to.have.same.members(["Piña", "Pera", "Fresa", "Melón"])
     })
 
