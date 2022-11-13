@@ -166,10 +166,17 @@ describe("Operaciones iterables", () => {
     })
 
 
+      
+        
+
+
+
+
     it("map nos permite realizar operaciones elemento a elemento (2)", () => {
 
         let list = ["Pikachu", "Charmander", "Magikarp"];
-
+        let teElijo = [", te elijo a ti!"];
+        let result = list.map(list=>list+teElijo)
         // utiliza la función map para aplicar los números de la lista y guardar la nueva lista en result
                 
         expect(result).to.have.same.members([
@@ -178,6 +185,8 @@ describe("Operaciones iterables", () => {
             "Magikarp, te elijo a ti!"
         ]);
     })
+
+
 
     it("Buscando el planeta con Array.includes", () => {
 
