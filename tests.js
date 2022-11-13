@@ -56,6 +56,8 @@ describe("Colecciones en JS: Array", () => {
 
     it("Podemos añadir elementos", () => {
         let fruits = ["Piña", "Manzana", "Fresa", "Melón"]
+        const indice = 4;
+        fruits[indice] = "Pera"
 
         // Añade el código que permite modificar la lista (incluyendo un elemento al final)
 
