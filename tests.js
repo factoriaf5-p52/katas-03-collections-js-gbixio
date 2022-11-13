@@ -77,7 +77,6 @@ describe("Ejemplos resueltos: Operaciones iterables", () => {
         // utiliza la función map para aplicar la función multiplicarPor2 a los números de la lista
         // SOLUCIÓN: 
         list = list.map(multiplicarPor2);
-        
         expect(list).to.have.same.members([2,10,14,18,22,26]);
     })
     it("map nos permite realizar operaciones elemento a elemento (2)", () => {
@@ -157,11 +156,15 @@ describe("Operaciones iterables", () => {
         let list = [1,5,7,9,11,13];
 
         // utiliza la función map para aplicar los números de la lista
-        list = "???";
-        
+       
+        function menosUno(num){
+            return num - 1;
+        }
+        list = list.map(menosUno)
 
         expect(list).to.have.same.members([0,4,6,8,10,12]);
     })
+
 
     it("map nos permite realizar operaciones elemento a elemento (2)", () => {
 
